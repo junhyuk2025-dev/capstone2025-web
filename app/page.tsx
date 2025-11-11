@@ -5,7 +5,7 @@ import {
   DocumentTextIcon,
   ChartBarIcon,
   ClockIcon,
-  SparklesIcon
+  LightBulbIcon
 } from '@heroicons/react/24/outline'
 
 const features = [
@@ -37,7 +37,7 @@ const features = [
   {
     name: '혁신적인 도구',
     description: '최신 기술을 활용한 협업 도구를 제공합니다.',
-    icon: SparklesIcon,
+    icon: LightBulbIcon,
   },
 ]
 

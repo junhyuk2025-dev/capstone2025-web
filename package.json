@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "clean": "rm -rf .next",
+    "fresh": "rm -rf .next && npm run dev",
+    "kill-ports": "lsof -ti:3000,3001,3002,3003 | xargs kill -9 2>/dev/null || true"
   },
   "dependencies": {
     "react": "^18.2.0",

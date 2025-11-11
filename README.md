@@ -62,3 +62,31 @@ capstone-web/
 
 페이지를 수정하면 자동으로 반영됩니다. `app/` 디렉토리의 파일을 수정하여 페이지를 편집할 수 있습니다.
 
+## 문제 해결
+
+### 페이지가 깨지거나 스타일이 적용되지 않는 경우
+
+1. **캐시 삭제 후 재시작**
+   ```bash
+   rm -rf .next
+   npm run dev
+   ```
+
+2. **브라우저 캐시 삭제**
+   - Chrome/Edge: `Cmd + Shift + R` (Mac) 또는 `Ctrl + Shift + R` (Windows)
+   - 또는 개발자 도구에서 "Disable cache" 체크
+
+3. **포트 충돌 해결**
+   ```bash
+   # 3000-3003 포트를 사용하는 프로세스 종료
+   npm run kill-ports
+   npm run dev
+   ```
+
+4. **의존성 재설치**
+   ```bash
+   rm -rf node_modules package-lock.json
+   npm install
+   npm run dev
+   ```
+
