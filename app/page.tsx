@@ -74,25 +74,25 @@ export default function Home() {
       {/* Hero Section */}
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
-          <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#0ea5e9] to-[#7dd3fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" />
+          <div className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#3b82f6] to-[#60a5fa] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" />
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              대학 프로젝트 협업 플랫폼
+              TeamMate
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              함께 성장하는 대학생 프로젝트 협업 공간. 아이디어를 현실로 만들어보세요.
+              대학생 팀 프로젝트 협업 및 매칭 통합 플랫폼. 팀 구성부터 협업, 성과 분석까지 한 곳에서.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
-                href="/projects"
+                href="/matching"
                 className="rounded-md bg-primary-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-primary-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
               >
-                프로젝트 시작하기
+                팀 매칭 시작하기
               </Link>
-              <Link href="/projects" className="text-sm font-semibold leading-6 text-gray-900">
-                프로젝트 둘러보기 <span aria-hidden="true">→</span>
+              <Link href="/dashboard" className="text-sm font-semibold leading-6 text-gray-900">
+                대시보드 보기 <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>
@@ -106,12 +106,12 @@ export default function Home() {
       <div className="py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:text-center">
-            <h2 className="text-base font-semibold leading-7 text-primary-600">협업의 모든 것</h2>
+            <h2 className="text-base font-semibold leading-7 text-primary-600">통합 플랫폼</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              효율적인 프로젝트 협업을 위한 도구
+              팀 구성부터 협업까지, 모든 것을 한 곳에서
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
-              대학생 프로젝트에 필요한 모든 기능을 한 곳에서 제공합니다.
+              대학생 팀 프로젝트의 비효율성을 해결하는 통합 플랫폼입니다.
             </p>
           </div>
           <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -201,13 +201,13 @@ export default function Home() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
-                href="/projects/new"
+                href="/matching"
                 className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-primary-600 shadow-sm hover:bg-primary-50 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
-                프로젝트 생성하기
+                팀 매칭 시작하기
               </Link>
-              <Link href="/projects" className="text-sm font-semibold leading-6 text-white">
-                프로젝트 탐색하기 <span aria-hidden="true">→</span>
+              <Link href="/login" className="text-sm font-semibold leading-6 text-white">
+                로그인하기 <span aria-hidden="true">→</span>
               </Link>
             </div>
           </div>
