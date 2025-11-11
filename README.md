@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 대학 프로젝트 협업 플랫폼 (UniCollab)
 
-## Getting Started
+대학생들을 위한 프로젝트 협업 플랫폼입니다.
 
-First, run the development server:
+## 기술 스택
+
+- **Next.js 14** - React 프레임워크
+- **TypeScript** - 타입 안정성
+- **Tailwind CSS** - 스타일링
+- **Heroicons** - 아이콘
+
+## 시작하기
+
+### 1. 의존성 설치
+
+```bash
+npm install
+```
+
+### 2. 개발 서버 실행
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+브라우저에서 [http://localhost:3000](http://localhost:3000)을 열어 확인하세요.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. 빌드
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 주요 기능
 
-To learn more about Next.js, take a look at the following resources:
+- 🏠 **홈페이지** - 플랫폼 소개 및 인기 프로젝트
+- 📋 **프로젝트 목록** - 모든 프로젝트 탐색
+- 📄 **프로젝트 상세** - 프로젝트 정보 및 팀 멤버 확인
+- 🎨 **반응형 디자인** - 모바일, 태블릿, 데스크톱 지원
+- 🎯 **현대적인 UI/UX** - Tailwind CSS 기반의 깔끔한 디자인
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 프로젝트 구조
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+capstone-web/
+├── app/
+│   ├── globals.css          # 전역 스타일
+│   ├── layout.tsx           # 루트 레이아웃
+│   ├── page.tsx             # 홈페이지
+│   └── projects/
+│       ├── page.tsx         # 프로젝트 목록
+│       └── [id]/
+│           └── page.tsx     # 프로젝트 상세
+├── components/
+│   ├── Navbar.tsx           # 네비게이션 바
+│   └── Footer.tsx           # 푸터
+└── package.json
+```
 
-## Deploy on Vercel
+## 개발
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+페이지를 수정하면 자동으로 반영됩니다. `app/` 디렉토리의 파일을 수정하여 페이지를 편집할 수 있습니다.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
